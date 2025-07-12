@@ -1,91 +1,68 @@
-# Pinterest-infinite-crawler
-An **infinite** pinterest crawler, crawl image by page.
-![main](https://raw.githubusercontent.com/mirusu400/Pinterest-crawler/main/docs/welcome.gif)
+# Pinterest Video Downloader
 
-# Requirements
-* Python 3.7+
-* Selenium, requests, beautifulsoup4, pyyaml
-* Chrome + Chromedriver
+🚀 **PinSave.in** is a free and fast tool to download Pinterest videos, images, and GIFs online — no login or app required.
 
-# Installation
-1. Download requirements
-```
-git clone https://github.com/mirusu400/Pinterest-infinite-crawler.git
-cd Pinterest-infinite-crawler
-pip install -r requirements.txt
-```
+---
 
-2. Download chromedriver
+## 🔗 Visit: [https://pinsave.in](https://pinsave.in)
 
-You **MUST** download [ChromeDriver](https://chromedriver.chromium.org/downloads) as the same version of [Chrome](chrome://settings/help).
+![Pinterest Video Downloader Preview](https://pinsave.in/assets/pinsave-preview.png)
 
-And replace it the same directory with `main.py`.
+---
 
-3. (Optional) Set `config.yaml`
+## ✅ Features
 
-Copy `.config.yaml` to `config.yaml` and fill your Pinterest's email, password and directorys to save images
-```
-email: [your email here]
-password: [your password here]
-directory: ./download
-```
+- 📥 Download Pinterest videos in HD quality
+- 🖼 Download images and GIFs instantly
+- ⚡ Fast, secure, and mobile-friendly
+- 🚫 No signup or software installation
+- 💯 Completely free forever
 
-# Usage
-```
-python main.py
-```
+---
 
-# Using argument
-You can also run crawler by passing argument, here are full document:
-```
-usage: main.py [-h] [-e EMAIL] [-p PASSWORD] [-d DIRECTORY] [-l LINK] [-g PAGE]
+## 📚 How to Use
 
-optional arguments:
-  -h, --help                            show this help message and exit
-  -e EMAIL, --email EMAIL               Your Pinterest account email
-  -p PASSWORD, --password PASSWORD      Your Pinterest account password
-  -d DIRECTORY, --directory DIRECTORY   Directory you want to download
-  -l LINK, --link LINK                  Link of Pinterest which you want to scrape
-  -g PAGE, --page PAGE                  Number of pages which you want to scrape
-  -b BATCH, --batch BATCH               Enable batch mode (Please read README.md!!)
-```
+1. Copy the Pinterest video/image link
+2. Visit [https://pinsave.in](https://pinsave.in)
+3. Paste the link into the input box
+4. Click **Download**
 
-**Example:**
-> main.py -e mirusu400@naver.com -p [your_password] -d download_image -l https://pinterest.com/ -g 10
+---
 
-# Batch mode
-You can download multiple Pinterest links in a one, using batch mode
+## 📸 Screenshots
 
-1. Copy and paste `.batch.json` to `batch.json` and modify json array files.
-```
-[
-    {
-        "index": "1",
-        "link": "https://www.pinterest.co.kr/pin/362750944993136496/",
-        "dir": "./download1"
-    },
-    {
-        "index": "2",
-        "link": "https://www.pinterest.co.kr/",
-        "dir": "./download2"
-    },
-    ...
-]
-```
+> Here's how PinSave.in looks:
 
-2. Use Batch mode in command line
-> main.py -b
+![Screenshot](https://pinsave.in/assets/screenshot.jpg)
 
-# Q & A
-### What is `Link to scrape` mean?
-You can select **any** pages what you want to scrape in Pinterest, not only main page. Such as:
-* [Releative-pins of one pin](https://www.pinterest.co.kr/pin/643240759283703965/)
-* [Someone's board](https://www.pinterest.co.kr/eaobrienae/croquies/)
-* [A search result](https://www.pinterest.co.kr/search/pins/?q=Github)
-* Or anything!
+---
 
-### Does it can download video?
-No, you can only download jpg images from this tool. Video is not support for now.
+## 💡 Why PinSave.in?
 
-# Contribute
-If you find an issue or wants to contribute, please issue or pull request.
+PinSave.in was created to help users easily save valuable content from Pinterest without hassle. It's 100% web-based, so you don’t need to install anything.
+
+---
+
+## 📢 Share This Tool
+
+Help others by sharing this GitHub project or the website:
+- Website: [https://pinsave.in](https://pinsave.in)
+- GitHub Repo: `https://github.com/yourusername/pinterest-video-downloader`
+
+---
+
+## 📲 Social Media Preview Tags (SEO)
+
+```html
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="Pinterest Video Downloader - Free Tool | PinSave.in">
+<meta property="og:description" content="Download Pinterest videos, GIFs, and images in HD quality. 100% free and mobile-friendly tool. No app or login required.">
+<meta property="og:image" content="https://pinsave.in/assets/pinsave-preview.png">
+<meta property="og:url" content="https://pinsave.in">
+<meta property="og:type" content="website">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pinterest Video Downloader - PinSave.in">
+<meta name="twitter:description" content="Free Pinterest video downloader to save videos, images, and GIFs in HD. Easy and fast. No signup.">
+<meta name="twitter:image" content="https://pinsave.in/assets/pinsave-preview.png">
